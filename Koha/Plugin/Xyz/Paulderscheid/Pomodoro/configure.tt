@@ -1,0 +1,27 @@
+[% SET footerjs = 1 %]
+[% INCLUDE 'doc-head-open.inc' %]
+<title>Koha: Pomodoro - Configure</title>
+[% INCLUDE 'doc-head-close.inc' %]
+</head>
+
+<body>
+    [% WRAPPER 'header.inc' %]
+        
+    [% END %]
+
+    <nav aria-label="breadcrumb" id="breadcrumbs">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/cgi-bin/koha/mainpage.pl">Home</a></li>
+            <li class="breadcrumb-item"><a href="/cgi-bin/koha/plugins/plugins-home.pl">Plugins</a></li>
+            <li class="breadcrumb-item"><a href="#">Pomodoro</a></li>
+            <li class="breadcrumb-item"><a href="#">Configure</a></li>
+        </ol>
+    </div>
+
+    <div class="main container-fluid">
+        <div class="row">
+            <div class="col-sm-12">Hello, Pomodoro!</div>
+        </div>
+    </div>
+
+[% INCLUDE 'intranet-bottom.inc' %]

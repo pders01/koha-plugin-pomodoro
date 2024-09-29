@@ -1,0 +1,22 @@
+{
+  "author": "Paul Derscheid <me@paulderscheid.xyz>",
+  "dependencies": {
+    "interactjs": "^1.10.27",
+    "lit": "^3.2.0"
+  },
+  "description": "This plugin adds a pomodoro widget to the staff interface Ã°ÂÂÂ",
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "src/index",
+  "name": "koha-plugin-pomodoro",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "serve": "vite preview"
+  },
+  "version": "0.0.1"
+}

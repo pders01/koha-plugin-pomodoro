@@ -1,0 +1,12 @@
+---
+author: 'Paul Derscheid <me@paulderscheid.xyz>'
+date_authored: 2024-09-29
+date_updated: 2024-09-29
+description: "This plugin adds a pomodoro widget to the staff interface ð\x9F\x8D\N"
+max_koha_version: ''
+min_koha_version: ''
+module: Koha::Plugin::Xyz::Paulderscheid::Pomodoro
+name: 'Koha Plugin Pomodoro'
+release_filename: koha-plugin-pomodoro
+static_dir_name: static
+version: 0.0.1

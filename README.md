@@ -59,7 +59,6 @@ Before you start, you should copy the env file from templates/env to .env in the
 $ cp templates/env .env
 ```
 
-
 ## License
 
 [GPL v3](https://github.com/pders01/koha-plugin?tab=GPL-3.0-1-ov-file#readme)

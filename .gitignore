@@ -1,5 +1,4 @@
 local/
-Koha/Plugin/
 templates/Koha/Plugin/
 
 .env
@@ -7,3 +6,6 @@ templates/Koha/Plugin/
 koha-plugin-*.kpz
 
 TODO.md
+
+node_modules/
+pnpm-lock.yaml

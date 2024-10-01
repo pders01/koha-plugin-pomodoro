@@ -7,10 +7,20 @@ use base qw(Koha::Plugins::Base);
 
 use Koha::DateUtils qw(dt_from_string);
 
-use JSON       qw(decode_json);
-use YAML::Tiny ();
+use JSON qw(decode_json);
 
-our $metadata = YAML::Tiny->read( join q{/}, [ split /::/, __PACKAGE__ ]->@[-1], 'PLUGIN.yml' );
+our $metadata = {
+    'author'           => 'Paul Derscheid <me@paulderscheid.xyz>',
+    'date_authored'    => '2024-09-29',
+    'date_updated'     => '2024-09-29',
+    'description'      => 'This plugin adds a pomodoro widget to the staff interface 🍅',
+    'max_koha_version' => q{},
+    'min_koha_version' => q{},
+    'name'             => 'Koha Plugin Pomodoro',
+    'release_filename' => 'koha-plugin-pomodoro',
+    'static_dir_name'  => 'static',
+    'version'          => '0.0.1'
+};
 
 sub new {
     my ( $class, $args ) = @_;

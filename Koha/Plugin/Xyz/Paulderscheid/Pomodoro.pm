@@ -1,4 +1,4 @@
-package Koha::Plugin::Xyz::Paulderscheid::Pomodoro v0.0.1;
+package Koha::Plugin::Xyz::Paulderscheid::Pomodoro v0.0.2;
 
 use strict;
 use warnings;
@@ -19,7 +19,7 @@ our $metadata = {
     'name'             => 'Koha Plugin Pomodoro',
     'release_filename' => 'koha-plugin-pomodoro',
     'static_dir_name'  => 'static',
-    'version'          => '0.0.1'
+    'version'          => '0.0.2'
 };
 
 sub new {

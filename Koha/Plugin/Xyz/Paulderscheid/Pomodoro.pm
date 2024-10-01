@@ -5,6 +5,8 @@ use warnings;
 
 use base qw(Koha::Plugins::Base);
 
+use Koha::DateUtils qw(dt_from_string);
+
 use JSON       qw(decode_json);
 use YAML::Tiny ();
 
@@ -52,6 +54,10 @@ B<Returns:> Boolean - Returns true to indicate that the upgrade was successful.
 
 sub upgrade {
     my ( $self, $args ) = @_;
+
+    my $dt = dt_from_string;
+
+    $self->store_data( { last_upgraded => $dt->ymd(q{-}) . q{ } . $dt->hms(q{:}) } );
 
     return 1;
 }

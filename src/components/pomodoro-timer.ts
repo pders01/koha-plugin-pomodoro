@@ -139,6 +139,9 @@ export class PomodoroTimer extends LitElement {
 
         interact(draggableElement).draggable({
             listeners: {
+                start: () => {
+                    document.body.style.userSelect = "none";
+                },
                 move: (event) => {
                     this._posX += event.dx;
                     this._posY += event.dy;
@@ -146,6 +149,9 @@ export class PomodoroTimer extends LitElement {
                     this.requestUpdate();
 
                     this._saveState();
+                },
+                end: () => {
+                    document.body.style.userSelect = "";
                 },
             },
             inertia: true,
